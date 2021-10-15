@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
 
-    int range, n;
+    int range, n, i = 0;
     
         cout << "Enter range of numbers : ";
         cin >> range;
@@ -16,30 +16,34 @@ int main(){
         cout << "Enter " << range << " consecutive numbers: ";
         cin >> n;
 
-    if (n %2 == 0)
+    if (n % 2 == 0)
     {
         cout << n << " is an even number \n";
+        i++;
 
     }
 
     else
     {
         cout << n << " is an odd number \n";
+        i++;
     
     }
 
-    while(n != range)
+    while(i != range)
     {
         cin >> n;
 
         if (n  %2 == 0)
     {
             cout << n << " is an even number \n";
+            i++;
     }
 
         else 
     {
             cout << n << " is an odd number \n";
+            i++;
      }
         
     }
